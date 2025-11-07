@@ -2,9 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | My Django App</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #6C63FF, #4A47A3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px 60px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        a {
+            display: inline-block;
+            margin-top: 1.5em;
+            padding: 12px 28px;
+            background-color: white;
+            color: #4A47A3;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+        a:hover {
+            background: #4A47A3;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-this is the template for the movie {{name}}
+    <div class="container">
+        <h1>Welcome to My Django App 👋</h1>
+        <p>Your journey starts here. Build something amazing!</p>
+        <a href="/admin/">Go to Admin</a>
+    </div>
 </body>
 </html>
