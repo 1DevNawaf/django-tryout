@@ -4,4 +4,5 @@ from .import views
 
 urlpatterns = [
     path('', views.welcome_page, name='welcome_page'),
+    path('movies/', views.movies_list, name='movies_list'),
 ]
